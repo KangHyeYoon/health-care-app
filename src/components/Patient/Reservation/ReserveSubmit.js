@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Card from "../../UI/Card";
 import Button from "../../UI/Button";
 
+import classes from "./ReserveSubmit.module.css";
 const ReserveSubmit = ({ id, doctorData }) => {
   const [doctor, setDoctor] = useState("");
   const [date, setDate] = useState("");
@@ -104,9 +105,10 @@ const ReserveSubmit = ({ id, doctorData }) => {
   };
   
   return (
-    <>
-      <h2>진료 예약</h2>
+    <div className={classes.mainbox}>
       <Card>
+      <div className={classes.top}>진료 예약</div>
+        <div className={classes.smallbox}>
         <form onSubmit={onSubmit}>
           <div>
             <label>담당의</label>
@@ -149,8 +151,9 @@ const ReserveSubmit = ({ id, doctorData }) => {
             </Button>
           </div>
         </form>
+        </div>
       </Card>
-    </>
+    </div>
   );
 };
 

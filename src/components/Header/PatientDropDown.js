@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
+import classes from "./PatientDropDown.module.css";
 const PatientDropDown = ({ toggleMenu }) => {
   const navigate = useNavigate();
 
@@ -21,12 +22,12 @@ const PatientDropDown = ({ toggleMenu }) => {
   };
 
   return (
-    <div>
-      <ul onClick={toggleMenu}>
-        <li onClick={toLoginHandler}>로그인</li>
-        <li onClick={toSignupHandler}>회원가입</li>
-        <li onClick={toHomeHandler}>로그아웃</li>
-      </ul>
+    <div className={classes.dropdown}>
+      <div className={classes.dropdowncontent}>
+        <div className={classes.content} onClick={toLoginHandler}>로그인</div>
+        <div className={classes.content} onClick={toSignupHandler}>회원가입</div>
+        <div className={classes.content} onClick={toHomeHandler}>로그아웃</div>
+      </div>
     </div>
   );
 };

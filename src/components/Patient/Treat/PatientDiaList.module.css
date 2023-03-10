@@ -1,0 +1,26 @@
+.diabox{
+    width: 430px;
+}
+
+.diasmallbox{
+    min-height: 400px;
+    border: 1px solid #CFCFD2;
+    padding: 1rem 1.5rem;
+}
+
+.top{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.inform{
+    font-size:  12px;
+    color: #8B8B8B;
+    border-bottom: 1px solid #CECECE;
+    padding-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}

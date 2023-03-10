@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Card from "../../UI/Card";
-import PatientDiaInfo from "./PatientDiaInfo";
+import PatientPreInfo from "./PatientPreInfo";
 
 import classes from "./PatientDiaList.module.css";
 const PatientDiaList = () => {
@@ -44,15 +44,16 @@ const PatientDiaList = () => {
   return (
     <div className={classes.diabox}>
       <Card>
-      <div className={classes.top}>진단 내역</div>
+      <div className={classes.top}>처방 내역</div>
       <div className={classes.diasmallbox}>
         <div className={classes.inform}>
-          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;진단 일시</span>
-          <span>진단 내용</span>
-          <span>병명&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <span>처방명</span>
+          <span>&nbsp;&nbsp;처방 내용</span>
+          <span>일일 복용(회)</span>
+          <span>총 복용(일)</span>
         </div>
         {treatData.map((v) => (
-          <PatientDiaInfo key={v.dia_num} data={v} />
+          <PatientPreInfo key={v.dia_num} data={v} />
         ))}
         </div>
       </Card>

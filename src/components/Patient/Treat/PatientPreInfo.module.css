@@ -1,0 +1,6 @@
+.treatlist{
+    font-size: 13.5px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.4rem 0rem 0.4rem 0rem;
+}

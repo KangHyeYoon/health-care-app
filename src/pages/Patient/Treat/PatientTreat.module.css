@@ -1,0 +1,12 @@
+.mainbox{
+    display: flex;
+    justify-content: center;
+}
+
+.positionchange{
+    width: 920px;
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

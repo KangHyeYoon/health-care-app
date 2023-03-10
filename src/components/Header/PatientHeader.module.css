@@ -6,7 +6,7 @@
 }
 
 .mainlogo{
-    padding: 3px 4rem 3px 5.5rem;
+    padding: 3px 4.8rem 3px 5.5rem;
 }
 
 .headerlist nav ul,
@@ -16,11 +16,11 @@
 }
 .headerlist nav ul li{
     list-style: none;
-    padding: 2px 1.9rem;
+    padding: 2px 1.4rem;
 }
 
 .headerlist{
-    font-size: 16px;
+    font-size: 14.5px;
     color: #383838;
 }
 
@@ -32,6 +32,6 @@
 }
 
 .mypage i {
-    font-size: 20px;
+    font-size: 17px;
     color: #383838;
 }

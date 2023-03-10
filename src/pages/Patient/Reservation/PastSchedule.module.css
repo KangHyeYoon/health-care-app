@@ -1,0 +1,17 @@
+.reservebox{
+    width: 430px;
+    margin-top: 1rem;
+}
+
+.reservesmallbox{
+    min-height: 195px;
+    border: 1px solid #CFCFD2;
+    padding: 1rem 1.5rem;
+}
+
+.top{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}

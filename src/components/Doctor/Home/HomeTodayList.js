@@ -19,7 +19,7 @@ const HomeTodayList = ({ info }) => {
       </div>
       <span>{info.born}</span>
       <span>{info.phone}</span>
-      <button onClick={toggleShow}>환자 정보</button>
+      <button className={classes.controlbutton} onClick={toggleShow}>환자 정보</button>
       {isShow && <PatientModal isOpen={isShow} />}
     </div>
   );

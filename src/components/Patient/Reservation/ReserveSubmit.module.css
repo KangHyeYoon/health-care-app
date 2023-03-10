@@ -1,0 +1,16 @@
+.mainbox{
+    width: 430px;
+}
+.smallbox{
+    min-height: 474px;
+    border: 1px solid #CFCFD2;
+    padding: 1rem 1.5rem;
+    background-color: #FCFCFC;
+}
+
+.top{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
